@@ -1,0 +1,386 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 90%;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 36rem) and (max-width: 47.9375rem) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (min-width: 62rem) and (max-width: 74.9375rem) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media (min-width: 75rem) {
+    html {
+        font-size: 100%;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 48rem) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 62rem) {
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+@media (min-width: 48rem) {
+    h2 {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+h3 {
+    margin-bottom: 1.5625rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
+    font-weight: 300;
+}
+
+@media (min-width: 48rem) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+@media (min-width: 36rem) {
+    h5 {
+        font-size: 1.25rem;
+    }
+}
+
+.background {
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+a {
+    color: #000;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.block {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+@media (min-width: 62rem) and (max-width: 74.9375rem) {
+    .block {
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .block {
+        padding-bottom: 9rem;
+        padding-top: 9rem;
+    }
+}
+
+.btn {
+    border-width: .125rem;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 1.2rem 2.5rem;
+    position: relative;
+    outline: none !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.card {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: none;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+}
+
+#footer .project-description {
+    font-size: 160%;
+    font-weight: 400;
+    margin: 0;
+}
+
+#footer #footer-main {
+    border-bottom: .0625rem solid rgba(255, 255, 255, .3);
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+@media (min-width: 48rem) {
+    #footer #footer-main {
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+}
+
+#works > .container {
+    max-width: none;
+    padding-inline: 40px;
+}
+
+.gallery__item {
+    border-radius: 0;
+    aspect-ratio: 1;
+    max-height: 25rem;
+    justify-content: flex-end;
+    padding: 2rem;
+    width: 100%;
+}
+
+.gallery__item .gallery__item-description {
+    color: #fff;
+    z-index: 1;
+}
+
+.gallery__item.floated-description {
+    background-color: #000;
+}
+
+.gallery__item.floated-description .background {
+    opacity: .6;
+}
+
+.gallery__item:hover .background {
+    -webkit-transform: scale(1.1) rotate(.01deg);
+            transform: scale(1.1) rotate(.01deg);
+}
+
+.gallery__item-description h5 {
+    opacity: .6;
+}
+
+.gallery__item h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media (min-width: 36rem) {
+    .gallery__item h3 {
+        font-size: 2.625rem;
+    }
+}
+
+.gallery__item .background {
+    -webkit-transform: scale(1) rotate(.01deg);
+            transform: scale(1) rotate(.01deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transition: .8s ease;
+    z-index: 0;
+}
+
+#hero {
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-navigation {
+    top: 0;
+    z-index: 999;
+    transition: .5s cubic-bezier(.77, 0, .18, 1);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#main-navigation .navbar {
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    border-right: .0625rem solid rgba(255, 255, 255, .2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    transition: .5s cubic-bezier(.77, 0, .18, 1);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#main-navigation .navbar-nav {
+    padding: 3.5rem 2.125rem;
+    width: 100%;
+}
+
+#main-navigation .nav-link {
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+    white-space: nowrap;
+    color: #fff;
+    position: relative;
+    opacity: .3;
+}
+
+#main-navigation .nav-link:hover,
+#main-navigation .nav-link:focus-visible {
+    opacity: 1;
+}
+
+#hesap-logo {
+    left: -1rem;
+    position: relative;
+}
+
+#pinterest-hesap-logo {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+}
+
+#pinterest-hesap-logo .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#hesap-logo a {
+    --brand-height: calc(34px + 1.625rem);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+#hesap-logo img {
+    width: calc(var(--brand-height) * 0.7);
+    height: auto;
+    object-fit: contain;
+}
+
+#hesap-logo span {
+    display: flex;
+    align-items: center;
+    height: var(--brand-height);
+    padding: 0 .75rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+@media (min-width: 36rem) {
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: max-content minmax(0, 1fr);
+        overflow: clip;
+    }
+
+    #main-navigation {
+        grid-area: 1 / 1;
+        position: sticky;
+        align-self: start;
+        height: 100vh;
+    }
+
+    #main-navigation .navbar {
+        width: max-content;
+    }
+
+    #main-navigation .navbar-nav {
+        padding-inline: 1.25rem calc(10px - .0625rem);
+    }
+
+    #pinterest-hesap-logo, .content {
+        grid-area: 1 / 2;
+    }
+
+    #pinterest-hesap-logo {
+        position: sticky;
+        align-self: start;
+        height: 0;
+        background-color: transparent;
+    }
+
+    #hesap-logo {
+        left: 0;
+    }
+}
+
+.gallery__item .img-into-bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contact {
+    background-color: #fff;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1.25px, transparent 1.5px);
+    background-size: 10px 10px;
+}
